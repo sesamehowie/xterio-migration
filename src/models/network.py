@@ -23,3 +23,17 @@ Binance = Network(
     True,
     "BNB",
 )
+
+Ethereum = Network(
+    "Ethereum Mainnet",
+    1,
+    [
+        "https://eth.drpc.org",
+        "https://eth-pokt.nodies.app",
+        "https://eth.meowrpc.com",
+        "https://eth.llamarpc.com",
+    ],
+    "https://etherscan.io",
+    True,
+    "ETH",
+)

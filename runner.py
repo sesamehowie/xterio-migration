@@ -3,14 +3,16 @@ from loguru import logger
 from eth_account.messages import encode_defunct
 from src.api.xterio_api import XterioAPI
 from src.clients.evm_client import EvmClient
+from src.models.network import Binance
 
 
 class Runner(EvmClient):
+
     def __init__(
         self,
         account_name=None,
         private_key=None,
-        network=...,
+        network=Binance,
         user_agent=None,
         proxy=None,
     ):
